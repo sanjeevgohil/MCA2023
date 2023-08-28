@@ -1,7 +1,7 @@
 //write a program to  input 10 number and calculate total and average.
-class pay
+class Pay
 {
-	double hra,ma,ta,da,pf,it,gs,ns;
+	double hra,ma,ta,da,pf,it,gs=0,ns=0;
 	
 	double hra(int sal)
 	{
@@ -25,31 +25,31 @@ class pay
 	}
 	double pf(int sal)
 	{
-		if(sal>8000)
-		{
-			pf = 1000;
-		}
-		else if(sal>12000)
-		{
-			pf = 1500;
-		}
-		else if(sal>18000)
+		if(sal>=18000)
 		{
 			pf = 1800;
 		}
+		else if(sal>=12000)
+		{
+			pf = 1500;
+		}
+		else if(sal>=8000)
+		{
+			pf = 1000;
+		}
 		return pf;
 	}
-	double it(int sal)
+	double gs(int sal)
+	{
+		gs = sal+hra+ma+da+ta;
+		return gs;
+	}
+	double it(double gs)
 	{
 		it = gs*10/100;
 		return it;
 	}
-	double gs(int sal)
-	{
-		gs = (hra+ma+da+ta);
-		return gs;
-	}
-	double ns(int sal)
+	double ns(double gs)
 	{
 		ns = gs-(pf+it);
 		return ns;
@@ -64,15 +64,15 @@ class J15
 		System.out.print("Enter Salary:");
 		sal = Integer.parseInt(System.console().readLine());
 
-		pay p1 = new pay();
+		Pay p1 = new Pay();
 		hra = p1.hra(sal);
 		ma = p1.ma(sal);
 		ta = p1.ta(sal);
 		da = p1.da(sal);
 		pf = p1.pf(sal);
-		it = p1.it(sal);
 		gs = p1.gs(sal);
-		ns = p1.ns(sal);
+		it = p1.it(gs);
+		ns = p1.ns(gs);
 
 		System.out.println("Salary is :"+sal);
 		System.out.println("HRA is :"+hra);
