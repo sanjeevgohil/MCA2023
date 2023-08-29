@@ -1,0 +1,53 @@
+*Input Method Of Java*
+
+1.Command Line Argument
+    args[0] require
+    package Import = No
+    Exception :No
+    Parsing require = yes
+
+2.Buffered Reader/InputStream Reader
+    package Import = java.io.*;
+    Exception :IOException
+    Parsing require = Yes
+
+3.Scanner Class
+    package Import = java.util.*;
+    Exception : No
+    Parsing require = No
+
+4.System.console().readLine() Method
+    package Import = No
+    Exception : No
+    Parsing require = Yes
+
+*Hirarchy Of Java*
+
+    Language
+        package 
+            Class   
+                Method
+
+*By Defaault package*
+    java.lang.*;
+    System is class Under this package
+
+*Class*
+    Member Variable
+    Member Method
+
+*Constructor*
+    1.public
+    2.same as class name
+    3.two types
+    4.no return type even void
+    5.automatic call
+    6.multiple constructor
+    7.first non-parameterized and second parameterized
+    8.more then one constructor it can be overloading
+
+**
+**
+**
+simle intrest
+pi*r*r
