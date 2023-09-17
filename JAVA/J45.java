@@ -1,4 +1,4 @@
-//write a program of constructor overloding //polymorphisam
+//write a program of simple inheritance 
 class A
 {
 	void dispA(){
