@@ -1,4 +1,4 @@
-//Write a program of Multiple Inheritance
+//Write a program of constructor in Inheritance
 class A
 {
 	int a;
