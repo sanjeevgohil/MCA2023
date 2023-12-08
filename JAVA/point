@@ -1,0 +1,80 @@
+*Input Method Of Java*
+
+1.Command Line Argument
+    args[0] require
+    package Import = No
+    Exception :No
+    Parsing require = yes
+
+2.Buffered Reader/InputStream Reader
+    package Import = java.io.*;
+    Exception :IOException
+    Parsing require = Yes
+
+3.Scanner Class
+    package Import = java.util.*;
+    Exception : No
+    Parsing require = No
+
+4.System.console().readLine() Method
+    package Import = No
+    Exception : No
+    Parsing require = Yes
+
+*Hirarchy Of Java*
+
+    Language
+        package 
+            Class   
+                Method
+
+*By Defaault package*
+    java.lang.*;
+    System is class Under this package
+
+*Class*
+    Member Variable
+    Member Method
+
+*Constructor*
+    1.public
+    2.same as class name
+    3.two types
+    4.no return type even void
+    5.automatic call
+    6.multiple constructor
+    7.first non-parameterized and second parameterized
+    8.more then one constructor it can be overloading
+
+*Method overloading*
+
+*3 Word IMP*
+
+1.  final       - Prevent   - Before Class Name Write =Inheritance/Before Method Name Write = overriding/Before Variable Name = Fixed Value Of That Variable
+2.  finally     - Block     - Execute Statement Complsury 
+3.  finalize    - Method    - Garbage collector - 
+**
+
+*to catch finally = runtime exception*
+*throws = compile exception*
+*throw = user define exception*
+
+**
+vector is one type of array
+its a dynamic array
+
+*JDBC Connectivity*
+1.install java
+2.create Environment Variable(User)
+3.Download JDBC Driver
+4.create classPath Variable(System)
+    start->Environment->system Variable->new
+    Variable name :classPath
+    Variable value : .jar path paste;.jar path paste
+5.restart System
+6.Database create
+    1.MS Access
+    2.MySQL
+7.Table create
+8.Create java file for database Connectivity
+
